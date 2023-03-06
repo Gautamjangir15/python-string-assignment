@@ -1,0 +1,8 @@
+def merge_the_tools(string, k):
+    ns=''
+    for i,char in enumerate(string,1):
+        if char not in ns:
+            ns=''.join((ns,char))
+        if i%k==0:
+            print(ns)
+            ns=''
